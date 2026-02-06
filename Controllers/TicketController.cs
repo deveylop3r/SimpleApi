@@ -22,6 +22,7 @@ public class TicketController : ControllerBase
   [HttpGet("Ping")]
   public string Ping()
   {
+    _logger.LogInformation("Fetching ping");
     return "Pong";
   }
 
